@@ -1,47 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <style>
-        body {
-            background-image: url("../static/bg.jpg");
-            margin: 20px;
-            background-size: 100vw 100vh;
-            }
-        .card {
-            align: center;
-            margin: auto;
-            padding: 10px;
-            }
-        h1 {
-            color: white;
-            text-align: center;
-            padding: 10px
-            }
-        .row {
-            padding: 10px;
-            }
-        .conntainer {
-        display: flex;
-        margin: auto
-            }
-        .btn {
-            display: flex;
-            display: grid;
-            place-items: center;
-            }
-    </style>
-</head>
-<body>
-<div class="container"> <header class="d-flex justify-content-center py-3">
-    <ul class="nav nav-pills">
-    <li class="nav-item"><a href="{{url_for('index')}}" class="nav-link active" aria-current="page">Home</a></li>
-     <li class="nav-item"><a href="{{url_for('music')}}" class="nav-link">Music</a></li> <li class="nav-item"><a href="#" class="nav-link">Movies</a></li><li class="nav-item"><a href="#" class="nav-link">Shows</a></li><li class="nav-item"><a href="#" class="nav-link">Books</a></li><li class="nav-item"><a href="#" class="nav-link">Places</a></li>
-    </ul> </header> </div>
+{% extends 'base.html' %}
+{% block title %}My Scrapbook{% endblock %}
 
+{% block content %}
 <div class="bg-dark text-secondary px-4 py-5 text-center"> <div class="py-5"> <h1 class="display-5 fw-bold text-white">Welcome to my digital scrapbook</h1> <div class="col-lg-6 mx-auto"> <p class="fs-5 mb-4">Looking for something to listen to? Or a book to read? Well I've put together a few of my favourites right here for you! And I didn't stop at books and music either! Books, movies, music, tv shows and coffee shops, all in one place for you to explore!</p> <div class="d-grid gap-2 d-sm-flex justify-content-sm-center"> </div> </div> </div> </div>
+{% endblock %}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

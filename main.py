@@ -10,5 +10,9 @@ def index():
 def music():
     return render_template("music.html")
 
+@app.route("/movies")
+def movies():
+    return render_template("movies.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
