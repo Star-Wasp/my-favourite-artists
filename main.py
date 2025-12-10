@@ -22,5 +22,10 @@ def movies():
 def about():
     return render_template("about.html")
 
+
+@app.route("/shows")
+def shows():
+    return render_template("shows.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
